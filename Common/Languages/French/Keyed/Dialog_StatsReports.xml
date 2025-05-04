@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData><CR_RaidCompressedMassageEnhanced>Réduit le nombre de raiders de {0} à {1}, et a renforcé les capacités de {3} d'entre eux. (Multiplicateur de base : {2}X)</CR_RaidCompressedMassageEnhanced>
+<CR_RaidCompressedMassageNotEnhanced>Le nombre de raiders a été réduit de {0} à {1}.</CR_RaidCompressedMassageNotEnhanced>
+<CR_InfoExcludedDrugs>[Raid compressé] Information : Les drogues suivantes seront exclues du triage pour la fonction "Ajouter des effets de drogue".</CR_InfoExcludedDrugs>
+<CR_InfoMustNegativeEffectDrugs>[Raid compressé] Information : Les drogues suivantes ignorent le paramètre "Éviter les effets négatifs" et infligent toujours des effets négatifs.</CR_InfoMustNegativeEffectDrugs></LanguageData>

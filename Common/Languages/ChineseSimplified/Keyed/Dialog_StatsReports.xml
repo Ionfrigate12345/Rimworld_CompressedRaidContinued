@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData><CR_RaidCompressedMassageEnhanced>将袭击者数量从{0}压缩到{1}，并增强了其中{3}名袭击者属性。（基础倍率：{2}倍）</CR_RaidCompressedMassageEnhanced>
+<CR_RaidCompressedMassageNotEnhanced>袭击者数量已从{0}压缩到{1}。</CR_RaidCompressedMassageNotEnhanced>
+<CR_InfoExcludedDrugs>[压缩袭击] 信息：以下药物将从“添加药物效果”中排除。
+</CR_InfoExcludedDrugs><CR_InfoMustNegativeEffectDrugs>[压缩袭击] 信息：以下药物会忽略“避免负面效果”的设置，并始终施加负面效果。
+</CR_InfoMustNegativeEffectDrugs></LanguageData>

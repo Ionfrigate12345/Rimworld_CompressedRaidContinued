@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<CR_SliderInput>Saisie avec curseur</CR_SliderInput>
+<CR_TextInput>Saisie par texte</CR_TextInput>
+<CR_InitializeValueAll>TOUS LES PARAMÈTRES</CR_InitializeValueAll>
+<CR_InitializeValueAllReally>Je vais réinitialiser tous les paramètres, êtes-vous sûr de vouloir continuer ?</CR_InitializeValueAllReally>
+<CR_InitializeValueAllConfirm>Appuyez sur "Exécuter" pour réinitialiser tous les paramètres.</CR_InitializeValueAllConfirm>
+<CR_InitializeValue>Réinitialiser "{0}".</CR_InitializeValue>
+<CR_LoadOldSettingsButton>Charger les paramètres de l'ancienne version</CR_LoadOldSettingsButton>
+<CR_CleanLoadLabel>Charger en mode propre</CR_CleanLoadLabel>
+<CR_MergeLoadLabel>Charger en mode fusion</CR_MergeLoadLabel>
+<CR_CleanLoadDesc>Remplace tous les éléments de configuration par ceux de l'ancienne version.</CR_CleanLoadDesc>
+<CR_MergeLoadDesc>Seuls les éléments modifiés par rapport aux valeurs par défaut seront remplacés.</CR_MergeLoadDesc>
+<CR_ButtonExecute>Exécuter</CR_ButtonExecute>
+<CR_InitializeValueAllConfirmAgree>Accepter</CR_InitializeValueAllConfirmAgree>
+
+<CR_CommonSectionTitle>Paramètres généraux</CR_CommonSectionTitle>
+<CR_MainSectionTitle>Fonction principale : amélioration par le Hediff "Raiders compressés"</CR_MainSectionTitle>
+<CR_OptionSectionTitle>Fonction optionnelle : {0}</CR_OptionSectionTitle>
+<CR_OptionAddBionicsTitle>Ajouter des implants bioniques</CR_OptionAddBionicsTitle>
+<CR_OptionRefineGearTitle>Améliorer l'équipement</CR_OptionRefineGearTitle>
+<CR_OptionAddDrugTitle>Ajouter des effets de drogue</CR_OptionAddDrugTitle>
+<CR_SectionDisableMessage>Désactivé par les paramètres.</CR_SectionDisableMessage>
+
+<CR_ChanceOfCompressionLabel>Probabilité d'exécution de la compression</CR_ChanceOfCompressionLabel>
+<CR_ChanceOfCompressionDesc>La probabilité d'effectuer une compression.\nSi la valeur est inférieure à 1, elle ne sera effectuée que si la vérification de probabilité réussit.\n(0.01 équivaut à 1%) (Par défaut : 1)</CR_ChanceOfCompressionDesc>
+
+<CR_ChanceOfEnhancementLabel>Probabilité d'exécution de l'amélioration</CR_ChanceOfEnhancementLabel>
+<CR_ChanceOfEnhancementDesc>La probabilité d'exécuter des améliorations liées à la compression. (0.01 équivaut à 1%)\nSi la valeur est inférieure à 1, elles ne seront appliquées que si la vérification réussit.\nChaque raider est évalué individuellement.\n(Par défaut : 1)</CR_ChanceOfEnhancementDesc>
+<CR_CalcBaseMultByEnhancedLabel>Calculer le multiplicateur de base selon le nombre amélioré</CR_CalcBaseMultByEnhancedLabel>
+<CR_CalcBaseMultByEnhancedDesc>Active/désactive le calcul du "multiplicateur de base" selon le nombre de raiders améliorés. (Par défaut : activé)</CR_CalcBaseMultByEnhancedDesc>
+
+
+<CR_AllowTypesLabel>Types autorisés pour la compression</CR_AllowTypesLabel>
+
+<CR_AllowMechanoidsLabel>Méchoïde</CR_AllowMechanoidsLabel>
+<CR_AllowMechanoidsDesc>Active/désactive la compression des Méchoïdes. (Par défaut : activé)</CR_AllowMechanoidsDesc>
+<CR_AllowInsectoidsLabel>Insectoïde</CR_AllowInsectoidsLabel>
+<CR_AllowInsectoidsDesc>Active/désactive la compression des Insectoïdes. (Par défaut : activé)</CR_AllowInsectoidsDesc>
+<CR_AllowManhuntersLabel>Prédateur fou</CR_AllowManhuntersLabel>
+<CR_AllowManhuntersDesc>Active/désactive la compression des prédateurs fous. (Par défaut : désactivé)</CR_AllowManhuntersDesc>
+
+<CR_AllowRaidFriendlyLabel>Allié</CR_AllowRaidFriendlyLabel>
+<CR_AllowRaidFriendlyDesc>Active/désactive la compression des alliés. (Par défaut : désactivé)</CR_AllowRaidFriendlyDesc>
+
+<CR_MaxRaidPawnsCountLabel>Nombre max de pions de raid</CR_MaxRaidPawnsCountLabel>
+<CR_MaxRaidPawnsCountDesc>Définit le “nombre maximum de pions de raid”. Si défini à 0, un raid normal aura lieu. (Par défaut : 100)</CR_MaxRaidPawnsCountDesc>
+
+<CR_GainFactorMultLabel>Facteur d'amélioration commun</CR_GainFactorMultLabel>
+<CR_GainFactorMultDesc>Définit le “facteur d'amélioration commun”. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMultDesc>
+
+<CR_GainFactorMultRaidFriendlyLabel>Facteur d'amélioration commun (Allié)</CR_GainFactorMultRaidFriendlyLabel>
+<CR_GainFactorMultRaidFriendlyDesc>Définit le “facteur d'amélioration commun (allié)”. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMultRaidFriendlyDesc>
+
+<CR_DisplayMessageLabel>Afficher le message</CR_DisplayMessageLabel>
+<CR_DisplayMessageDesc>Active/désactive l'affichage du message de résultat de la compression. (Par défaut : activé)</CR_DisplayMessageDesc>
+
+
+<CR_Mult>Multiplicateur</CR_Mult>
+<CR_Max>Max</CR_Max>
+<CR_PainLabel>Résistance à la douleur</CR_PainLabel>
+<CR_ArmorRating_BluntLabel>Armure - Contondant</CR_ArmorRating_BluntLabel>
+<CR_ArmorRating_SharpLabel>Armure - Tranchant</CR_ArmorRating_SharpLabel>
+<CR_ArmorRating_HeatLabel>Armure - Thermique</CR_ArmorRating_HeatLabel>
+<CR_MeleeDodgeChanceLabel>Chance d'esquive en mêlée</CR_MeleeDodgeChanceLabel>
+<CR_MeleeHitChanceLabel>Chance de toucher en mêlée</CR_MeleeHitChanceLabel>
+<CR_MoveSpeedLabel>Vitesse de déplacement</CR_MoveSpeedLabel>
+<CR_ShootingAccuracyPawnLabel>Précision de tir</CR_ShootingAccuracyPawnLabel>
+<CR_PawnTrapSpringChanceLabel>Chance d'éviter les pièges</CR_PawnTrapSpringChanceLabel>
+
+<CR_CapacitySightLabel>Vue</CR_CapacitySightLabel>
+<CR_CapacityMovingLabel>Mouvement</CR_CapacityMovingLabel>
+<CR_CapacityHearingLabel>Ouïe</CR_CapacityHearingLabel>
+<CR_CapacityManipulationLabel>Manipulation</CR_CapacityManipulationLabel>
+<CR_CapacityMetabolismLabel>Métabolisme</CR_CapacityMetabolismLabel>
+<CR_CapacityConsciousnessLabel>Conscience</CR_CapacityConsciousnessLabel>
+<CR_CapacityBloodFiltrationLabel>Filtration sanguine</CR_CapacityBloodFiltrationLabel>
+<CR_CapacityBloodPumpingLabel>Pulsation sanguine</CR_CapacityBloodPumpingLabel>
+<CR_CapacityBreathingLabel>Respiration</CR_CapacityBreathingLabel>
+
+<CR_GainFactorMultPainDesc>Définit le facteur d'amélioration de la résistance à la douleur. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultPainDesc>
+<CR_GainFactorMultArmorRating_BluntDesc>Définit le facteur d'amélioration de l'armure - contondant. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultArmorRating_BluntDesc>
+<CR_GainFactorMultArmorRating_SharpDesc>Définit le facteur d'amélioration de l'armure - tranchant. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultArmorRating_SharpDesc>
+<CR_GainFactorMultArmorRating_HeatDesc>Définit le facteur d'amélioration de l'armure - thermique. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultArmorRating_HeatDesc>
+<CR_GainFactorMultMeleeDodgeChanceDesc>Définit le facteur d'amélioration de l'esquive en mêlée. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMultMeleeDodgeChanceDesc>
+<CR_GainFactorMultMeleeHitChanceDesc>Définit le facteur d'amélioration de la précision en mêlée. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMultMeleeHitChanceDesc>
+<CR_GainFactorMultMoveSpeedDesc>Définit le facteur d'amélioration de la vitesse de déplacement. Si défini à 0, cet effet est désactivé. (Par défaut : 0.5)</CR_GainFactorMultMoveSpeedDesc>
+<CR_GainFactorMultShootingAccuracyPawnDesc>Définit le facteur d'amélioration de la précision de tir. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultShootingAccuracyPawnDesc>
+<CR_GainFactorMultPawnTrapSpringChanceDesc>Définit le facteur d'amélioration de l'esquive des pièges. Si défini à 0, cet effet est désactivé. (Par défaut : 0.5)</CR_GainFactorMultPawnTrapSpringChanceDesc>
+<CR_GainFactorMaxPainDesc>Définit la valeur maximale de l'amélioration de la résistance à la douleur. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMaxPainDesc>
+<CR_GainFactorMaxArmorRating_BluntDesc>Définit la valeur maximale de l'amélioration de l'armure - contondant. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMaxArmorRating_BluntDesc>
+<CR_GainFactorMaxArmorRating_SharpDesc>Définit la valeur maximale de l'amélioration de l'armure - tranchant. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMaxArmorRating_SharpDesc>
+<CR_GainFactorMaxArmorRating_HeatDesc>Définit la valeur maximale de l'amélioration de l'armure - thermique. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMaxArmorRating_HeatDesc>
+<CR_GainFactorMaxMeleeDodgeChanceDesc>Définit la valeur maximale de l'amélioration de l'esquive en mêlée. Si défini à 0, cet effet est désactivé. (Par défaut : 20)</CR_GainFactorMaxMeleeDodgeChanceDesc>
+<CR_GainFactorMaxMeleeHitChanceDesc>Définit la valeur maximale de l'amélioration de la précision en mêlée. Si défini à 0, cet effet est désactivé. (Par défaut : 20)</CR_GainFactorMaxMeleeHitChanceDesc>
+<CR_GainFactorMaxMoveSpeedDesc>Définit la valeur maximale de l'amélioration de la vitesse de déplacement. Si défini à 0, cet effet est désactivé. (Par défaut : 20)</CR_GainFactorMaxMoveSpeedDesc>
+<CR_GainFactorMaxShootingAccuracyPawnDesc>Définit la valeur maximale de l'amélioration de la précision de tir. Si défini à 0, cet effet est désactivé. (Par défaut : 20)</CR_GainFactorMaxShootingAccuracyPawnDesc>
+<CR_GainFactorMaxPawnTrapSpringChanceDesc>Définit la valeur maximale de l'amélioration de l'esquive des pièges. Si défini à 0, cet effet est désactivé. (Par défaut : 1)</CR_GainFactorMaxPawnTrapSpringChanceDesc>
+
+<CR_GainFactorMultCapacitySightDesc>Définit le facteur d'amélioration de la vue. Si défini à 0, cet effet est désactivé. (Par défaut : 0.5)</CR_GainFactorMultCapacitySightDesc>
+<CR_GainFactorMultCapacityMovingDesc>Définit le facteur d'amélioration du mouvement. Si défini à 0, cet effet est désactivé. (Par défaut : 0.5)</CR_GainFactorMultCapacityMovingDesc>
+<CR_GainFactorMultCapacityHearingDesc>Définit le facteur d'amélioration de l'ouïe. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultCapacityHearingDesc>
+<CR_GainFactorMultCapacityManipulationDesc>Définit le facteur d'amélioration de la manipulation. Si défini à 0, cet effet est désactivé. (Par défaut : 0.5)</CR_GainFactorMultCapacityManipulationDesc>
+<CR_GainFactorMultCapacityMetabolismDesc>Définit le facteur d'amélioration du métabolisme. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultCapacityMetabolismDesc>
+<CR_GainFactorMultCapacityConsciousnessDesc>Définit le facteur d'amélioration de la conscience. Si défini à 0, cet effet est désactivé. (Par défaut : 0.5)</CR_GainFactorMultCapacityConsciousnessDesc>
+<CR_GainFactorMultCapacityBloodFiltrationDesc>Définit le facteur d'amélioration de la filtration sanguine. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultCapacityBloodFiltrationDesc>
+<CR_GainFactorMultCapacityBloodPumpingDesc>Définit le facteur d'amélioration de la circulation sanguine. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultCapacityBloodPumpingDesc>
+<CR_GainFactorMultCapacityBreathingDesc>Définit le facteur d'amélioration de la respiration. Si défini à 0, cet effet est désactivé. (Par défaut : 0.25)</CR_GainFactorMultCapacityBreathingDesc>
+<CR_GainFactorMaxCapacitySightDesc>Définit la valeur maximale de l'amélioration de la vue. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacitySightDesc>
+<CR_GainFactorMaxCapacityMovingDesc>Définit la valeur maximale de l'amélioration du mouvement. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityMovingDesc>
+<CR_GainFactorMaxCapacityHearingDesc>Définit la valeur maximale de l'amélioration de l'ouïe. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityHearingDesc>
+<CR_GainFactorMaxCapacityManipulationDesc>Définit la valeur maximale de l'amélioration de la manipulation. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityManipulationDesc>
+<CR_GainFactorMaxCapacityMetabolismDesc>Définit la valeur maximale de l'amélioration du métabolisme. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityMetabolismDesc>
+<CR_GainFactorMaxCapacityConsciousnessDesc>Définit la valeur maximale de l'amélioration de la conscience. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityConsciousnessDesc>
+<CR_GainFactorMaxCapacityBloodFiltrationDesc>Définit la valeur maximale de l'amélioration de la filtration sanguine. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityBloodFiltrationDesc>
+<CR_GainFactorMaxCapacityBloodPumpingDesc>Définit la valeur maximale de l'amélioration de la circulation sanguine. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityBloodPumpingDesc>
+<CR_GainFactorMaxCapacityBreathingDesc>Définit la valeur maximale de l'amélioration de la respiration. Si défini à 0, cet effet est désactivé. (Par défaut : 5)</CR_GainFactorMaxCapacityBreathingDesc>
+
+<CR_AddBionicsChanceLabel>Chance d'ajout de bioniques</CR_AddBionicsChanceLabel>
+<CR_AddBionicsChanceFactorDesc>Définit le facteur de chance d'ajout de bioniques.\nDéfinir à 0 désactive la fonction “Ajouter des bioniques”. (Par défaut : 2)</CR_AddBionicsChanceFactorDesc>
+
+<CR_AddBionicsChanceMaxDesc>Définit la valeur maximale de la chance d'ajout de bioniques.\nDéfinir à 0 désactive la fonction “Ajouter des bioniques”. (Par défaut : 0.9)</CR_AddBionicsChanceMaxDesc>
+
+<CR_AddBionicsChanceNegativeCurveLabel>Courbe négative pour l'ajout de bioniques</CR_AddBionicsChanceNegativeCurveLabel>
+<CR_AddBionicsChanceNegativeCurveDesc>Définit la courbe négative pour l'ajout de bioniques.\nC'est la réduction de pourcentage de chance après le deuxième ajout. (Par défaut : 0.5)</CR_AddBionicsChanceNegativeCurveDesc>
+
+<CR_AddBionicsMaxNumberLabel>Nombre max de bioniques ajoutés</CR_AddBionicsMaxNumberLabel>
+<CR_AddBionicsMaxNumberDesc>Définit le nombre maximum de bioniques pouvant être ajoutés à un seul raider. (Par défaut : 4)</CR_AddBionicsMaxNumberDesc>
+
+<CR_AllowedByGTTechLevelLabel>Autoriser les bioniques selon le niveau technologique</CR_AllowedByGTTechLevelLabel>
+<CR_AllowedByGTTechLevelDesc>Définit le niveau technologique requis pour permettre l'ajout de bioniques. (Par défaut : 0)\nValeurs possibles :\n0 : TOUS\n1 : Supérieur à Animal\n2 : Supérieur à Néolithique\n3 : Supérieur à Médiéval\n4 : Supérieur à Industriel\n5 : Supérieur à Spatien\n6 : Supérieur à Ultra\n7 : Supérieur à Archotech</CR_AllowedByGTTechLevelDesc>
+
+<CR_NoTechLevelLimmitLabel>TOUS</CR_NoTechLevelLimmitLabel>
+
+<CR_RefineGearChanceLabel>Chance d'amélioration d'équipement</CR_RefineGearChanceLabel>
+<CR_RefineGearChanceFactorDesc>Définit le facteur de chance pour l'amélioration d'équipement.\nDéfinir à 0 désactive la fonction “Améliorer l'équipement”. (Par défaut : 1)</CR_RefineGearChanceFactorDesc>
+
+<CR_RefineGearChanceMaxDesc>Définit la valeur maximale de la chance d'amélioration d'équipement.\nDéfinir à 0 désactive la fonction “Améliorer l'équipement”. (Par défaut : 0.9)</CR_RefineGearChanceMaxDesc>
+
+<CR_RefineGearChanceNegativeCurveLabel>Courbe négative de raffinement</CR_RefineGearChanceNegativeCurveLabel>
+<CR_RefineGearChanceNegativeCurveDesc>Définit la courbe négative de chance d'amélioration pour plusieurs niveaux consécutifs. (Par défaut : 0.5)</CR_RefineGearChanceNegativeCurveDesc>
+
+<CR_QualityUpMaxNumLabel>Nombre max d'améliorations de qualité</CR_QualityUpMaxNumLabel>
+<CR_QualityUpMaxNumDesc>Définit le nombre maximal d'améliorations de qualité pour l'équipement. (Par défaut : 4)</CR_QualityUpMaxNumDesc>
+
+<CR_OptionSetBiocodeLabel>Ajouter “Biocode”</CR_OptionSetBiocodeLabel>
+<CR_OptionSetBiocodeDesc>Active/désactive la fonction qui ajoute un “Biocode” lors de la réussite du raffinement d'une arme. (Par défaut : désactivé)</CR_OptionSetBiocodeDesc>
+
+<CR_OptionAddDeathAcidifierLabel>Ajouter “Acidificateur de mort”</CR_OptionAddDeathAcidifierLabel>
+<CR_OptionAddDeathAcidifierDesc>Active/désactive la fonction qui ajoute un “Acidificateur de mort” lors de la réussite du raffinement d'un vêtement. (Par défaut : désactivé)</CR_OptionAddDeathAcidifierDesc>
+
+<CR_AddDrugChanceLabel>Chance d'ajout d'effets de drogue</CR_AddDrugChanceLabel>
+<CR_AddDrugChanceFactorDesc>Définit le facteur de chance pour l'ajout d'effets de drogue.\nDéfinir à 0 désactive la fonction “Ajouter des effets de drogue”. (Par défaut : 1)</CR_AddDrugChanceFactorDesc>
+
+<CR_AddDrugChanceMaxDesc>Définit la valeur maximale de la chance d'ajout d'effets de drogue.\nDéfinir à 0 désactive la fonction “Ajouter des effets de drogue”. (Par défaut : 0.9)</CR_AddDrugChanceMaxDesc>
+
+<CR_AddDrugChanceNegativeCurveLabel>Courbe négative pour l'ajout de drogues</CR_AddDrugChanceNegativeCurveLabel>
+<CR_AddDrugChanceNegativeCurveDesc>Définit la réduction en pourcentage de chance après le deuxième effet de drogue ajouté. (Par défaut : 0.5)</CR_AddDrugChanceNegativeCurveDesc>
+
+<CR_AddDrugMaxNumberLabel>Nombre max d'effets de drogue ajoutés</CR_AddDrugMaxNumberLabel>
+<CR_AddDrugMaxNumberDesc>Définit le nombre maximum d'effets de drogue qu'un raider peut recevoir.\nEn augmentant cette valeur, il est recommandé d'activer “Éviter les effets négatifs” car les effets secondaires peuvent être plus importants. (Par défaut : 1)</CR_AddDrugMaxNumberDesc>
+
+
+<CR_GiveOnlyActiveIngredientsLabel>Éviter les effets négatifs</CR_GiveOnlyActiveIngredientsLabel>
+<CR_GiveOnlyActiveIngredientsDesc>Active/désactive la fonction d’évitement des dommages chimiques lors de l’administration de drogues.\nQuand activée, elle empêche les dépendances et effets négatifs liés aux surdoses.\nCependant, “Luciferium” ignore ce réglage et génère toujours une dépendance en raison de ses effets permanents.\nDe plus, si un effet secondaire est intégré à l’effet principal, il ne peut être évité. (Par défaut : activé)</CR_GiveOnlyActiveIngredientsDesc>
+
+<CR_IgnoreNonVolatilityDrugsLabel>Effets négatifs forcés pour drogues permanentes</CR_IgnoreNonVolatilityDrugsLabel>
+<CR_IgnoreNonVolatilityDrugsDesc>Active/désactive la fonction permettant aux drogues permanentes de causer des dommages chimiques malgré les paramètres d’évitement.\n“Luciferium” ignore toujours ce réglage et inflige des dommages chimiques. (Par défaut : activé)</CR_IgnoreNonVolatilityDrugsDesc>
+
+<CR_WithoutDrugLabel>Exclure selon le type de drogue</CR_WithoutDrugLabel>
+
+<CR_WithoutSocialDrugLabel>Sociale</CR_WithoutSocialDrugLabel>
+<CR_WithoutSocialDrugDesc>Active/désactive l’exclusion des drogues de catégorie “Sociale” du tirage aléatoire. Exemples : “Bière”, “Thé de psychite”. (Par défaut : désactivé)</CR_WithoutSocialDrugDesc>
+
+<CR_WithoutHardDrugLabel>Forte</CR_WithoutHardDrugLabel>
+<CR_WithoutHardDrugDesc>Active/désactive l’exclusion des drogues de catégorie “Forte” du tirage. Exemples : “Yayo”, “Go-juice”. (Par défaut : désactivé)</CR_WithoutHardDrugDesc>
+
+<CR_WithoutMedicalDrugLabel>Médicale</CR_WithoutMedicalDrugLabel>
+<CR_WithoutMedicalDrugDesc>Active/désactive l’exclusion des drogues médicales du tirage. Exemples : “Luciferium”. (Par défaut : désactivé)</CR_WithoutMedicalDrugDesc>
+
+<CR_WithoutNonVolatilityDrugLabel>Permanente</CR_WithoutNonVolatilityDrugLabel>
+<CR_WithoutNonVolatilityDrugDesc>Active/désactive l’exclusion des drogues à effets permanents du tirage. Activez si vous souhaitez exclure des drogues comme “Luciferium”. (Par défaut : désactivé)</CR_WithoutNonVolatilityDrugDesc>
+
+<CR_LimitationsByTechLevelLabel>Restrictions selon le niveau technologique</CR_LimitationsByTechLevelLabel>
+<CR_LimitationsByTechLevelDesc>Active/désactive la prise en compte du “TechLevel” des factions dans le choix des drogues. (Par défaut : activé)</CR_LimitationsByTechLevelDesc>
+
+<CR_TechLevelAllowableRangeLabel>Plage de tolérance technologique</CR_TechLevelAllowableRangeLabel>
+
+<CR_TechLevelUpperRangeLabel>Supérieure</CR_TechLevelUpperRangeLabel>
+<CR_TechLevelUpperRangeDesc>Étend le tirage aux drogues ayant un “TechLevel” supérieur de cette valeur à celui de la faction. (Par défaut : 2)</CR_TechLevelUpperRangeDesc>
+
+<CR_TechLevelLowerRangeLabel>Inférieure</CR_TechLevelLowerRangeLabel>
+<CR_TechLevelLowerRangeDesc>Étend le tirage aux drogues ayant un “TechLevel” inférieur de cette valeur à celui de la faction. (Par défaut : 2)</CR_TechLevelLowerRangeDesc>
+
+<CR_EnableMapGeneratedEnemyEnhanced>Améliorer les ennemis générés lors de la création de la carte</CR_EnableMapGeneratedEnemyEnhanced>
+<CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>Déclenchement après que la colonie la plus riche atteigne le seuil de menace</CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>
+<CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>Chaque +1% de stat requiert des points de raid supplémentaires</CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>
+
+
+</LanguageData>
