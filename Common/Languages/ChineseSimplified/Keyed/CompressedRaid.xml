@@ -173,7 +173,7 @@
 <CR_WithoutSocialDrugDesc>切换是否从抽选中排除“社交类”药物。\n“社交类”包括“啤酒”、“精神茶”等。（默认：关闭）</CR_WithoutSocialDrugDesc>
 
 <CR_WithoutHardDrugLabel>硬性</CR_WithoutHardDrugLabel>
-<CR_WithoutHardDrugDesc>切换是否从抽选中排除“硬性”药物。\n“硬性”包括“耀药”、“活力水”等。（默认：关闭）</CR_WithoutHardDrugDesc>
+<CR_WithoutHardDrugDesc>切换是否从抽选中排除“硬性”药物。\n“硬性”包括“闪耀医药”、“活力水”等。（默认：关闭）</CR_WithoutHardDrugDesc>
 
 <CR_WithoutMedicalDrugLabel>医疗类</CR_WithoutMedicalDrugLabel>
 <CR_WithoutMedicalDrugDesc>切换是否从抽选中排除“医疗类”药物。\n“医疗类”包括“魔鬼素”等。（默认：关闭）</CR_WithoutMedicalDrugDesc>
