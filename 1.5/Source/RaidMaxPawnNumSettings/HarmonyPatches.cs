@@ -858,25 +858,26 @@ namespace CompressedRaid
         {
             if (CompressedRaidMod.ModDisabled()) return;
 
+            var m_Settings = LoadedModManager.GetMod<CompressedRaidMod>().CRModSettings;
+
+            if (!m_Settings.mapGeneratedEnemyEnhanced) return;
+
             List<Pawn> hostilePawns = __result.mapPawns.AllPawnsSpawned
                 .Where(p => p.Faction != null && p.Faction.HostileTo(Faction.OfPlayer) && !p.Dead && !p.Downed)
                 .ToList();
-            var m_Settings = LoadedModManager.GetMod<CompressedRaidMod>().CRModSettings;
 
             //For hostile pawns preexist on a newly generated map: Use current storyteller threat point on the richest player map as basis.
             Map mainMap = Utils.GetPlayerMainColonyMap(false, false);
             if (mainMap == null)
             {
-                Log.Message("CR Test: CR aborted for newly generated map enemies. No player settlement found for threat points.");
                 return;
             }
             float threatMainColony = StorytellerUtility.DefaultThreatPointsNow(mainMap);
             float gainStatValue = 0;
-            if (m_Settings.mapGeneratedEnemyEnhanced && threatMainColony > m_Settings.mapGeneratedEnemyMainColonyThreatMinimum)
+            if (threatMainColony > m_Settings.mapGeneratedEnemyMainColonyThreatMinimum)
             {
                 var extraThreat = threatMainColony - m_Settings.mapGeneratedEnemyMainColonyThreatMinimum;
-                gainStatValue = extraThreat / m_Settings.mapGeneratedEnemyMainColonyThreatPerStatPercentage;
-                Log.Message("CR Test: extraThreat = " + extraThreat + "  gainStatValue = " + gainStatValue);
+                gainStatValue = extraThreat / m_Settings.mapGeneratedEnemyMainColonyThreatPerStatPercentage / 100.0f;
             }
             int order = PowerupUtility.GetNewOrder();
             int enhancePawnNumber = PowerupUtility.GetEnhancePawnNumber(hostilePawns.Count);
