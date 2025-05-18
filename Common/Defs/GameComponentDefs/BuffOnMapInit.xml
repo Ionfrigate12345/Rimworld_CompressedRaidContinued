@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameComponentDef>
+  <defName>CompressedRaidBuffOnInit</defName>
+  <gameComponentClass>CompressedRaid.MapComponent_CompressedRaidBuffOnInit</gameComponentClass>
+</GameComponentDef>

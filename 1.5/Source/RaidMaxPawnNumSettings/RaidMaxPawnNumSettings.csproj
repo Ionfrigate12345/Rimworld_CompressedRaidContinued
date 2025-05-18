@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global\Utils.cs" />
+    <Compile Include="MapComponent_CompressedRaidBuffOnInit.cs" />
     <Compile Include="ModCompatibility\StaticVariables_ModCompatibility.cs" />
     <Compile Include="ModCompatibility\Def.cs" />
     <Compile Include="ModCompatibility\CompatibilityPatches.cs" />
