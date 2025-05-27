@@ -111,7 +111,7 @@ namespace CompressedRaid
                     {
                         if (CompressedRaidMod.AllowCompress(pawn) && gainStatValue > 0f && !disableFactors)
                         {
-                            Hediff powerup = PowerupUtility.RemoveAndSetPowerupHediff(pawn, order);
+                            Hediff powerup = PowerupUtility.SetPowerupHediff(pawn, order);
                             if (powerup != null)
                             {
                                 bool powerupEnable = PowerupUtility.TrySetStatModifierToHediff(powerup, gainStatValue);

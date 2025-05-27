@@ -88,10 +88,10 @@ namespace CompressedRaid
                  && !disable
                  && PowerupUtility.EnableEnhancePawn(i, enhanceNum))
                 {
-                    var hd = PowerupUtility.RemoveAndSetPowerupHediff(pawn, order);
+                    var hd = PowerupUtility.SetPowerupHediff(pawn, order, false);
                     if (hd != null && PowerupUtility.TrySetStatModifierToHediff(hd, gain))
                         count++;
-                }
+                }   
             }
 
             if (CompressedRaidMod.displayMessageValue && count > 0)

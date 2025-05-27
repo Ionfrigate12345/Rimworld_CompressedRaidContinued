@@ -195,13 +195,21 @@ namespace CompressedRaid
             return "CR_Powerup";
         }
 
-        public static Hediff RemoveAndSetPowerupHediff(Pawn pawn, int order)
+        public static Hediff SetPowerupHediff(Pawn pawn, int order, bool removeExisting = true)
         {
-            List<Hediff> hediffs = pawn.health.hediffSet.hediffs.Where(x=>x is CR_Powerup).ToList();
+            List<Hediff> hediffs = pawn.health.hediffSet.hediffs.Where(x => x is CR_Powerup).ToList();
+
             for (int i = 0; i < hediffs.Count; i++)
             {
                 Hediff hediff = hediffs[i];
-                pawn.health.RemoveHediff(hediff);
+                if (removeExisting)
+                {
+                    pawn.health.RemoveHediff(hediff);
+                }
+                else
+                {
+                    return null;
+                }
             }
             HediffDef crDef = HediffDef.Named(String.Format("{0}{1}", GetPowerupDefNameStartWith(), order));
             pawn.health.AddHediff(crDef);

@@ -406,7 +406,7 @@ namespace CompressedRaid
                     {
                         if (CompressedRaidMod.AllowCompress(item) && gainStatValue > 0f && !disableFactors)
                         {
-                            Hediff powerup = PowerupUtility.RemoveAndSetPowerupHediff(item, order);
+                            Hediff powerup = PowerupUtility.SetPowerupHediff(item, order);
                             if (powerup != null)
                             {
                                 bool powerupEnable = PowerupUtility.TrySetStatModifierToHediff(powerup, gainStatValue);
@@ -581,7 +581,7 @@ namespace CompressedRaid
                         {
                             if (CompressedRaidMod.AllowCompress(pawn) && gainStatValue > 0f && !disableFactors)
                             {
-                                Hediff powerup = PowerupUtility.RemoveAndSetPowerupHediff(pawn, order);
+                                Hediff powerup = PowerupUtility.SetPowerupHediff(pawn, order);
                                 if (powerup != null)
                                 {
                                     bool powerupEnable = PowerupUtility.TrySetStatModifierToHediff(powerup, gainStatValue);
@@ -770,7 +770,7 @@ namespace CompressedRaid
                                 //Hediff仕込みここから
                                 if (CompressedRaidMod.AllowCompress(item) && CompressedRaidMod.CompressedEnabled())
                                 {
-                                    Hediff powerup = PowerupUtility.RemoveAndSetPowerupHediff(item, order);
+                                    Hediff powerup = PowerupUtility.SetPowerupHediff(item, order);
                                     if (powerup != null)
                                     {
                                         bool powerupEnable = PowerupUtility.TrySetStatModifierToHediff(powerup, gainStatValue);
