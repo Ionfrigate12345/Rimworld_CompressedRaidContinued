@@ -84,6 +84,7 @@ namespace CompressedRaid
 
         public static bool m_CanTranspilerGeneratePawns = true;
         public static bool m_CanTranspilerGenerateAnimals = true;
+        public static bool m_CanTranspilerEntitySwarm = true;        //是否启用实体增强
         public static HashSet<Type> m_AllowPawnGroupKindWorkerTypes = new HashSet<Type>();
         private static void GenerateAnything_Impl(List<Pawn> pawns, int baseNum, int maxPawnNum, bool raidFriendly)
         {
@@ -197,6 +198,17 @@ namespace CompressedRaid
                 return;
             }
             GenerateAnything_Impl(pawns, baseNum, maxPawnNum, raidFriendly);
+        }
+
+        internal static void GenerateEntitys_Impl(List<Pawn> pawns, int baseNum, int maxPawnNum)
+        {
+            if (pawns == null || pawns.Count == 0 || baseNum <= 0 || maxPawnNum <= 0)
+            {
+                return;
+            }
+            SendLog_Debug(MessageTypes.Debug, "进入增强逻辑，实体数量：{0}，baseNum：{1}，maxPawnNum：{2}",
+                 pawns.Count, baseNum, maxPawnNum); // 添加此行
+            GenerateAnything_Impl(pawns, baseNum, maxPawnNum, raidFriendly: false);
         }
     }
 }

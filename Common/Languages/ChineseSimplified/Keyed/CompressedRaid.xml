@@ -38,6 +38,8 @@
 <CR_AllowMechanoidsDesc>切换是否允许压缩机械体。 (默认：开启)</CR_AllowMechanoidsDesc>
 <CR_AllowInsectoidsLabel>虫族</CR_AllowInsectoidsLabel>
 <CR_AllowInsectoidsDesc>切换是否允许压缩虫族。 (默认：开启)</CR_AllowInsectoidsDesc>
+<CR_AllowEntitysLabel>异常</CR_AllowEntitysLabel>
+<CR_AllowEntitysDesc>切换是否允许压缩异常袭击。 (默认：开启)</CR_AllowEntitysDesc>
 <CR_AllowManhuntersLabel>疯狂动物</CR_AllowManhuntersLabel>
 <CR_AllowManhuntersDesc>切换是否允许压缩疯狂动物。 (默认：关闭)</CR_AllowManhuntersDesc>
 

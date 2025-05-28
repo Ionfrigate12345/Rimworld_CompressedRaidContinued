@@ -37,6 +37,8 @@
 <CR_AllowMechanoidsDesc>メカノイドの圧縮許可設定のON/OFFを切り替えます。(初期値:ON)</CR_AllowMechanoidsDesc>
 <CR_AllowInsectoidsLabel>虫</CR_AllowInsectoidsLabel>
 <CR_AllowInsectoidsDesc>虫の圧縮許可設定のON/OFFを切り替えます。(初期値:ON)</CR_AllowInsectoidsDesc>
+<CR_AllowEntitysLabel> 異常エンティティ </CR_AllowEntitysLabel>
+<CR_AllowEntitysDesc > エンティティの圧縮許可をオン / オフします。(初期値:ON)</CR_AllowEntitysDesc>
 <CR_AllowManhuntersLabel>人狩り</CR_AllowManhuntersLabel>
 <CR_AllowManhuntersDesc>人狩りの圧縮許可設定のON/OFFを切り替えます。(初期値:ON)</CR_AllowManhuntersDesc>
 

@@ -38,6 +38,8 @@
 <CR_AllowMechanoidsDesc>Active/désactive la compression des Méchoïdes. (Par défaut : activé)</CR_AllowMechanoidsDesc>
 <CR_AllowInsectoidsLabel>Insectoïde</CR_AllowInsectoidsLabel>
 <CR_AllowInsectoidsDesc>Active/désactive la compression des Insectoïdes. (Par défaut : activé)</CR_AllowInsectoidsDesc>
+<CR_AllowEntitysLabel>Entité Anomalie</CR_AllowEntitysLabel>
+<CR_AllowEntitysDesc>Active ou désactive la compression des Entités. (Par défaut : activé)</CR_AllowEntitysDesc>
 <CR_AllowManhuntersLabel>Prédateur fou</CR_AllowManhuntersLabel>
 <CR_AllowManhuntersDesc>Active/désactive la compression des prédateurs fous. (Par défaut : désactivé)</CR_AllowManhuntersDesc>
 

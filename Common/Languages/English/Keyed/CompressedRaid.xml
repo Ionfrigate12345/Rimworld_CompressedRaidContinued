@@ -37,6 +37,8 @@
 <CR_AllowMechanoidsDesc>Toggles the allow of compress Mechanoid ON/OFF. (Default: ON)</CR_AllowMechanoidsDesc>
 <CR_AllowInsectoidsLabel>Insectoid</CR_AllowInsectoidsLabel>
 <CR_AllowInsectoidsDesc>Toggles the allow of compress Insectoid ON/OFF. (Default: ON)</CR_AllowInsectoidsDesc>
+<CR_AllowEntitysLabel>AnomalyEntity</CR_AllowEntitysLabel>
+<CR_AllowEntitysDesc>Toggles the allow of compress Entity ON/OFF. (Default: ON)</CR_AllowEntitysDesc>
 <CR_AllowManhuntersLabel>Manhunter</CR_AllowManhuntersLabel>
 <CR_AllowManhuntersDesc>Toggles the allow of compress Manhunter ON/OFF. (Default: OFF)</CR_AllowManhuntersDesc>
 
