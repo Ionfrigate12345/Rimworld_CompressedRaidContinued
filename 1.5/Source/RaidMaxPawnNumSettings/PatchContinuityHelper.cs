@@ -237,5 +237,62 @@ namespace CompressedRaid
             raidFriendly = m_CompressWork_GenerateAnimals.raidFriendly;
             return true;
         }
+
+        private static CompressWork m_CompressWork_EntitySwarm = default(CompressWork);
+
+        internal static int SetCompressWork_EntitySwarm(IncidentParms parms, int baseNum)
+        {
+            if (parms == null || baseNum <= 0)
+            {
+                return StateFalse(baseNum);
+            }
+            if (CompressedRaidMod.ModDisabled() || !CompressedRaidMod.allowEntitySwarmValue)
+            {
+                return StateFalse(baseNum);
+            }
+
+            int maxPawnNum = CompressedRaidMod.maxRaidPawnsCountValue;
+            if (maxPawnNum >= baseNum)
+            {
+                return StateFalse(baseNum);
+            }
+
+            // 检查实体类型限制
+            if (!CompressedRaidMod.allowMechanoidsValue &&
+                parms.faction?.def?.techLevel >= TechLevel.Industrial)  // 假设工业级以上可能有机械族
+            {
+                return StateFalse(baseNum);
+            }
+
+            int hashKey = parms.GetHashCode();
+            m_CompressWork_EntitySwarm = new CompressWork(hashKey, baseNum, maxPawnNum);
+
+#if DEBUG
+            Log.Message($"@@@ Compressed Raid: ENTITY_SWARM, BASE_NUM={baseNum}, COMPRESSED_NUM={maxPawnNum}");
+#endif
+
+            return maxPawnNum;
+
+            int StateFalse(int ret)
+            {
+                m_CompressWork_EntitySwarm.allowedCompress = false;
+                return ret;
+            }
+        }
+
+        // 获取实体群压缩工作的值
+        internal static bool TryGetCompressWork_EntitySwarmValues(int hashKey, out int baseNum, out int maxPawnNum)
+        {
+            if (!m_CompressWork_EntitySwarm.allowedCompress || hashKey != m_CompressWork_EntitySwarm.hashKey)
+            {
+                baseNum = 0;
+                maxPawnNum = 0;
+                return false;
+            }
+
+            baseNum = m_CompressWork_EntitySwarm.baseNum;
+            maxPawnNum = m_CompressWork_EntitySwarm.maxPawnNum;
+            return true;
+        }
     }
 }

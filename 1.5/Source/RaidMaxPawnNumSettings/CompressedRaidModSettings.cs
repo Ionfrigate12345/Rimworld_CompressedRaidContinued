@@ -19,6 +19,7 @@ namespace CompressedRaid
                 SetHugsLibValue<float>("chanceOfCompression", float.TryParse, ref this.chanceOfCompression, ref UIUtility.NumericBuffer.chanceOfCompression);
                 SetHugsLibValue<bool>("allowMechanoids", bool.TryParse, ref this.allowMechanoids);
                 SetHugsLibValue<bool>("allowInsectoids", bool.TryParse, ref this.allowInsectoids);
+                SetHugsLibValue<bool>("allowEntitys", bool.TryParse, ref this.allowEntitys);
                 SetHugsLibValue<int>("maxRaidPawnsCount", int.TryParse, ref this.maxRaidPawnsCount, ref UIUtility.NumericBuffer.maxRaidPawnsCount);
                 SetHugsLibValue<float>("gainFactorMult", float.TryParse, ref this.gainFactorMult, ref UIUtility.NumericBuffer.gainFactorMult);
                 SetHugsLibValue<float>("chanceOfEnhancement", float.TryParse, ref this.chanceOfEnhancement, ref UIUtility.NumericBuffer.chanceOfEnhancement);
@@ -404,6 +405,7 @@ namespace CompressedRaid
             Scribe_Values.Look<float>(ref this.chanceOfCompression, "chanceOfCompression", StaticVariables.CHANCE_OF_COMPRESSION_DEFAULT, false);
             Scribe_Values.Look<bool>(ref this.allowMechanoids, "allowMechanoids", StaticVariables.ALLOW_MECHANOIDS_DEFAULT, false);
             Scribe_Values.Look<bool>(ref this.allowInsectoids, "allowInsectoids", StaticVariables.ALLOW_INSECTOIDS_DEFAULT, false);
+            Scribe_Values.Look<bool>(ref this.allowEntitys, "allowEntitys", StaticVariables.ALLOW_ENTITY_DEFAULT, false);
             Scribe_Values.Look<int>(ref this.maxRaidPawnsCount, "maxRaidPawnsCount", StaticVariables.MAX_RAID_PAWNS_COUNT_DEFAULT, false);
             Scribe_Values.Look<float>(ref this.gainFactorMult, "gainFactorMult", StaticVariables.GAIN_FACTOR_MULT_DEFAULT, false);
             Scribe_Values.Look<float>(ref this.chanceOfEnhancement, "chanceOfEnhancement", StaticVariables.CHANCE_OF_ENHANCEMENT_DEFAULT, false);
@@ -494,6 +496,7 @@ namespace CompressedRaid
         public float chanceOfCompression = StaticVariables.CHANCE_OF_COMPRESSION_DEFAULT;
         public bool allowMechanoids = StaticVariables.ALLOW_MECHANOIDS_DEFAULT;
         public bool allowInsectoids = StaticVariables.ALLOW_INSECTOIDS_DEFAULT;
+        public bool allowEntitys = StaticVariables.ALLOW_ENTITY_DEFAULT;//生成实体
         public int maxRaidPawnsCount = StaticVariables.MAX_RAID_PAWNS_COUNT_DEFAULT;
         public float gainFactorMult = StaticVariables.GAIN_FACTOR_MULT_DEFAULT;
         public float chanceOfEnhancement = StaticVariables.CHANCE_OF_ENHANCEMENT_DEFAULT;

@@ -26,6 +26,8 @@ namespace CompressedRaid
             m_DefaultValues["chanceOfCompression"] = CHANCE_OF_COMPRESSION_DEFAULT;
             m_DefaultValues["allowMechanoids"] = ALLOW_MECHANOIDS_DEFAULT;
             m_DefaultValues["allowInsectoids"] = ALLOW_INSECTOIDS_DEFAULT;
+
+            m_DefaultValues["allowEntitys"] = ALLOW_ENTITY_DEFAULT;
             m_DefaultValues["maxRaidPawnsCount"] = MAX_RAID_PAWNS_COUNT_DEFAULT;
             m_DefaultValues["gainFactorMult"] = GAIN_FACTOR_MULT_DEFAULT;
             m_DefaultValues["chanceOfEnhancement"] = CHANCE_OF_ENHANCEMENT_DEFAULT;
@@ -111,6 +113,8 @@ namespace CompressedRaid
         public const float CHANCE_OF_COMPRESSION_DEFAULT = 1f;
         public const bool ALLOW_MECHANOIDS_DEFAULT = true;
         public const bool ALLOW_INSECTOIDS_DEFAULT = true;
+        //允许实体
+        public const bool ALLOW_ENTITY_DEFAULT = true;
         public const int MAX_RAID_PAWNS_COUNT_DEFAULT = 100;
         public const float GAIN_FACTOR_MULT_DEFAULT = 1f;
         public const float CHANCE_OF_ENHANCEMENT_DEFAULT = 1f;

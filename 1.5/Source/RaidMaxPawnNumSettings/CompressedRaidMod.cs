@@ -270,23 +270,30 @@ namespace CompressedRaid
                 UIUtility.HighlightRect(allowCompressTargetTypes);
                 Rect allowCompressTargetTypesLabel = new Rect(inRect.x + UIUtility.MARGIN_LEFT, inRect.y + marginTop, UIUtility.WIDTH_THREE_QUARTERS_HALF, UIUtility.HEIGHT_ROW);
                 Widgets.Label(allowCompressTargetTypesLabel, "CR_AllowTypesLabel".Translate());
+                // 计算每个选项的宽度，使它们均匀分布
+                float optionWidth = (inRect.width - UIUtility.WIDTH_THREE_QUARTERS_HALF - (UIUtility.MARGIN_LEFT * 2)) / 5f; // 5个选项
 
-                Rect allowRaidFriendly = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF, inRect.y + marginTop, UIUtility.INPUT_WIDTH_MIN, UIUtility.HEIGHT_ROW);
+                Rect allowRaidFriendly = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF, inRect.y + marginTop, optionWidth, UIUtility.HEIGHT_ROW);
                 UIUtility.HighlightRect(allowRaidFriendly);
                 UIUtility.ToolTipRow(allowRaidFriendly, "CR_AllowRaidFriendlyDesc".Translate(), 0f);
                 UIUtility.LabeledCheckBoxLeft(allowRaidFriendly, "CR_AllowRaidFriendlyLabel".Translate(), ref m_Settings.allowRaidFriendly, ref valueChanged, () => { }, true);
 
-                Rect allowMechanoids = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + UIUtility.INPUT_WIDTH_MIN, inRect.y + marginTop, UIUtility.INPUT_WIDTH_MIN, UIUtility.HEIGHT_ROW);
+                Rect allowMechanoids = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + optionWidth, inRect.y + marginTop, optionWidth, UIUtility.HEIGHT_ROW);
                 UIUtility.HighlightRect(allowMechanoids);
                 UIUtility.ToolTipRow(allowMechanoids, "CR_AllowMechanoidsDesc".Translate(), 0f);
                 UIUtility.LabeledCheckBoxLeft(allowMechanoids, "CR_AllowMechanoidsLabel".Translate(), ref m_Settings.allowMechanoids, ref valueChanged, () => { }, true);
 
-                Rect allowInsectoids = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + (UIUtility.INPUT_WIDTH_MIN * 2f), inRect.y + marginTop, UIUtility.INPUT_WIDTH_MIN, UIUtility.HEIGHT_ROW);
+                Rect allowInsectoids = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + (optionWidth * 2), inRect.y + marginTop, optionWidth, UIUtility.HEIGHT_ROW);
                 UIUtility.HighlightRect(allowInsectoids);
                 UIUtility.ToolTipRow(allowInsectoids, "CR_AllowInsectoidsDesc".Translate(), 0f);
                 UIUtility.LabeledCheckBoxLeft(allowInsectoids, "CR_AllowInsectoidsLabel".Translate(), ref m_Settings.allowInsectoids, ref valueChanged, () => { }, true);
 
-                Rect allowManhunters = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + (UIUtility.INPUT_WIDTH_MIN * 3f), inRect.y + marginTop, UIUtility.INPUT_WIDTH_MIN, UIUtility.HEIGHT_ROW);
+                Rect allowEntitys = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + (optionWidth * 3), inRect.y + marginTop, optionWidth, UIUtility.HEIGHT_ROW);
+                UIUtility.HighlightRect(allowEntitys);
+                UIUtility.ToolTipRow(allowEntitys, "CR_AllowEntitysDesc".Translate(), 0f);
+                UIUtility.LabeledCheckBoxLeft(allowEntitys, "CR_AllowEntitysLabel".Translate(), ref m_Settings.allowEntitys, ref valueChanged, () => { }, true);
+
+                Rect allowManhunters = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + (optionWidth * 4), inRect.y + marginTop, optionWidth, UIUtility.HEIGHT_ROW);
                 UIUtility.HighlightRect(allowManhunters);
                 UIUtility.ToolTipRow(allowManhunters, "CR_AllowManhuntersDesc".Translate(), 0f);
                 UIUtility.LabeledCheckBoxLeft(allowManhunters, "CR_AllowManhuntersLabel".Translate(), ref m_Settings.allowManhunters, ref valueChanged, () => { }, true);
@@ -2425,6 +2432,7 @@ namespace CompressedRaid
             CompressedRaidMod.gainFactorMultRaidFriendlyValue = m_Settings.gainFactorMultRaidFriendly;
             CompressedRaidMod.allowMechanoidsValue = m_Settings.allowMechanoids;
             CompressedRaidMod.allowInsectoidsValue = m_Settings.allowInsectoids;
+            CompressedRaidMod.allowEntitySwarmValue = m_Settings.allowEntitys;
             CompressedRaidMod.allowManhuntersValue = m_Settings.allowManhunters;
             CompressedRaidMod.displayMessageValue = m_Settings.displayMessage;
             CompressedRaidMod.enableMainEnhanceValue = m_Settings.enableMainEnhance;
@@ -2501,6 +2509,7 @@ namespace CompressedRaid
         public static float chanceOfCompressionValue = StaticVariables.CHANCE_OF_COMPRESSION_DEFAULT;
         public static bool allowMechanoidsValue = StaticVariables.ALLOW_MECHANOIDS_DEFAULT;
         public static bool allowInsectoidsValue = StaticVariables.ALLOW_INSECTOIDS_DEFAULT;
+        public static bool allowEntitySwarmValue = StaticVariables.ALLOW_ENTITY_DEFAULT;     //允许实体袭击
         public static int maxRaidPawnsCountValue = StaticVariables.MAX_RAID_PAWNS_COUNT_DEFAULT;
         public static float gainFactorMultValue = StaticVariables.GAIN_FACTOR_MULT_DEFAULT;
         public static float chanceOfEnhancementValue = StaticVariables.CHANCE_OF_ENHANCEMENT_DEFAULT;
@@ -2625,6 +2634,14 @@ namespace CompressedRaid
                 {
                     return false;
                 }
+            }
+            bool isEntitySwarm = pawn?.RaceProps.FleshType == FleshTypeDefOf.Fleshbeast ||
+                                 pawn?.RaceProps.FleshType == FleshTypeDefOf.EntityMechanical ||
+                                 pawn?.RaceProps.FleshType == FleshTypeDefOf.EntityFlesh;
+
+            if (!allowEntitySwarmValue && isEntitySwarm)
+            {
+                return false;
             }
             return true;
         }

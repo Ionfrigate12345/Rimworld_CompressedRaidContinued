@@ -161,6 +161,47 @@ namespace CompressedRaid
                     General.SendLog_Debug(General.MessageTypes.DebugError, String.Format("[{0}.{1}] Patch Failed!! reason:{2}{3}", orgType.FullName, orgName, Environment.NewLine, ex.ToString()));
                 }
             }
+
+            // 新增：EntitySwarm 补丁
+            // 新增：EntitySwarm 补丁（使用 Transpiler）
+            Type entitySwarmType = typeof(IncidentWorker_EntitySwarm);
+            MethodInfo generateEntitiesMethod = AccessTools.Method(
+          typeof(IncidentWorker_EntitySwarm),
+          "GenerateEntities",  // 直接使用方法名，而非 nameof
+          new Type[] { typeof(IncidentParms), typeof(float) }
+              );
+
+            if (General.m_CanTranspilerEntitySwarm)  // 新增配置项
+            {
+                try
+                {
+                    // 应用 Transpiler 补丁
+                    harmony.Patch(
+                        generateEntitiesMethod,
+                        null,
+                        null,
+                        new HarmonyMethod(typeof(EntitySwarmIncidentUtility_Patch), nameof(EntitySwarmIncidentUtility_Patch.GenerateEntities_Transpiler), new Type[] { typeof(IEnumerable<CodeInstruction>) }) { methodType = MethodType.Normal }
+                    );
+
+                    // 应用 Finalizer 补丁
+                    harmony.Patch(
+                        generateEntitiesMethod,
+                        null,
+                        null,
+                        null,
+                        new HarmonyMethod(typeof(EntitySwarmIncidentUtility_Patch), nameof(EntitySwarmIncidentUtility_Patch.GenerateEntities_Finalizer),
+                            new Type[] { typeof(Exception), typeof(List<Pawn>).MakeByRefType(), typeof(IncidentParms), typeof(float) })
+                        { methodType = MethodType.Normal }
+                    );
+
+                    General.SendLog_Debug(General.MessageTypes.Debug,
+                        $"[IncidentWorker_EntitySwarm.GenerateEntities] Transpiler + Finalizer patched!!");
+                } catch (Exception ex)
+                {
+                    General.SendLog_Debug(General.MessageTypes.DebugError,
+                        $"[IncidentWorker_EntitySwarm.GenerateEntities] Patch Failed!! reason:{Environment.NewLine}{ex.ToString()}");
+                }
+            }
         }
 
         private static void TranspilerTest(Harmony harmony, HashSet<TargetMethod> targetMethods)
@@ -477,6 +518,85 @@ namespace CompressedRaid
                 }
             }
             return false;
+        }
+    }
+    #endregion
+
+    #region EntitySwarm.GenerateEntities
+    [StaticConstructorOnStartup]
+    class EntitySwarmIncidentUtility_Patch
+    {
+        // 测试 Transpiler 是否可行
+        internal static IEnumerable<CodeInstruction> GenerateEntities_Test_Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            CodeInstruction pre1 = null;
+            CodeInstruction pre2 = null;
+            bool matched = false;
+            foreach (CodeInstruction ci in instructions)
+            {
+                if (!matched)
+                {
+                    // 匹配生成实体的关键指令（根据实际方法调整）
+                    matched = ci.opcode == OpCodes.Callvirt && pre1?.opcode == OpCodes.Call && pre2?.opcode == OpCodes.Ldarg_0;
+                }
+                pre2 = pre1;
+                pre1 = ci;
+            }
+            General.m_CanTranspilerEntitySwarm &= matched;
+            return instructions;
+        }
+
+        // Transpiler：修改生成数量
+        internal static IEnumerable<CodeInstruction> GenerateEntities_Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            CodeInstruction pre1 = null;
+            CodeInstruction pre2 = null;
+            bool matched = false;
+            foreach (CodeInstruction ci in instructions)
+            {
+                if (!matched && ci.opcode == OpCodes.Callvirt && pre1?.opcode == OpCodes.Call && pre2?.opcode == OpCodes.Ldarg_0)
+                {
+                    matched = true;
+                    // 插入压缩逻辑：获取参数并调用辅助方法
+                    yield return new CodeInstruction(OpCodes.Ldarg_1); // parms (IncidentParms)
+                    yield return CodeInstruction.Call(typeof(PatchContinuityHelper), nameof(PatchContinuityHelper.SetCompressWork_EntitySwarm));
+                }
+                yield return ci;
+                pre2 = pre1;
+                pre1 = ci;
+            }
+        }
+
+        // Finalizer：处理生成结果
+        internal static Exception GenerateEntities_Finalizer(Exception __exception, ref List<Pawn> __result, IncidentParms parms, float points)
+        {
+            if (__exception == null && __result != null)
+            {
+                // 复用动物生成的处理逻辑（简化版）
+                int maxPawnNum = CompressedRaidMod.maxRaidPawnsCountValue;
+                int baseNum = __result.Count;
+
+                if (maxPawnNum < baseNum && CompressedRaidMod.allowEntitySwarmValue)
+                {
+                    bool allowedCompress = true;
+                    // 检查生物类型限制（如机械族、昆虫族）
+                    if (!CompressedRaidMod.allowMechanoidsValue && __result.Any(p => p.RaceProps.IsMechanoid))
+                        allowedCompress = false;
+                    if (!CompressedRaidMod.allowInsectoidsValue && __result.Any(p => p.RaceProps.FleshType == FleshTypeDefOf.Insectoid))
+                        allowedCompress = false;
+
+                    if (allowedCompress)
+                    {
+                        // 压缩数量并增强
+                        __result = __result.Take(maxPawnNum).ToList();
+                        General.GenerateEntitys_Impl(__result, baseNum, maxPawnNum); // 复用通用增强方法
+
+                        // 显示消息
+                        Messages.Message("袭击信息：压缩了" + baseNum + "为" + maxPawnNum, MessageTypeDefOf.NeutralEvent);
+                    }
+                }
+            }
+            return __exception;
         }
     }
     #endregion
