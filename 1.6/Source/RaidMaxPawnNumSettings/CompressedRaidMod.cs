@@ -482,6 +482,10 @@ namespace CompressedRaid
                 Rect inputMapGeneratedEnemyMainColonyThreatPerStatPercentage = new Rect(inRect.x + UIUtility.MARGIN_LEFT + UIUtility.WIDTH_THREE_QUARTERS_HALF + (UIUtility.INPUT_WIDTH_MIN * 3f), inRect.y + marginTop, 80f, UIUtility.HEIGHT_ROW);
                 Widgets.TextFieldNumeric(inputMapGeneratedEnemyMainColonyThreatPerStatPercentage, ref m_Settings.mapGeneratedEnemyMainColonyThreatPerStatPercentage, ref mapGeneratedEnemyMainColonyThreatPerStatPercentageBuffer, 1, 10000);
                 marginTop += UIUtility.HEIGHT_ROW;
+
+                Rect labelMapGeneratedEnemyMainColonyUseAllMaps = new Rect(inRect.x + UIUtility.MARGIN_LEFT, inRect.y + marginTop, inRect.width, UIUtility.HEIGHT_ROW);
+                Widgets.CheckboxLabeled(labelMapGeneratedEnemyMainColonyUseAllMaps, "CR_mapGeneratedEnemyMainColonyUseAllMaps".Translate(), ref m_Settings.mapGeneratedEnemyMainColonyUseAllMaps);
+                marginTop += UIUtility.HEIGHT_ROW;
             }
         }
         #endregion
