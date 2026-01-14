@@ -198,6 +198,6 @@
 <CR_EnableMapGeneratedEnemyEnhanced>Améliorer les ennemis générés lors de la création de la carte</CR_EnableMapGeneratedEnemyEnhanced>
 <CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>Déclenchement après que la colonie la plus riche atteigne le seuil de menace</CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>
 <CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>Chaque +1% de stat requiert des points de raid supplémentaires</CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>
-
+<CR_mapGeneratedEnemyMainColonyUseAllMaps>Calcul basé sur la somme totale des points de menace de toutes les cartes actuelles (Conçu pour un style de jeu nomade comme le vaisseau gravitationnel Odyssey)</CR_mapGeneratedEnemyMainColonyUseAllMaps>
 
 </LanguageData>

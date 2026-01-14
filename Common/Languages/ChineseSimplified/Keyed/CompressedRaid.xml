@@ -197,6 +197,6 @@
 <CR_EnableMapGeneratedEnemyEnhanced>在地图生成时强化预生成的敌人</CR_EnableMapGeneratedEnemyEnhanced>
 <CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>当最富有殖民地威胁值达到该值时触发</CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>
 <CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>每增加1%属性需要相应袭击点数</CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>
-
+<CR_mapGeneratedEnemyMainColonyUseAllMaps>使用当前所有地图的袭击点数总和计算（适合如Odyssey逆重飞船等无固定据点玩法）</CR_mapGeneratedEnemyMainColonyUseAllMaps>
 
 </LanguageData>

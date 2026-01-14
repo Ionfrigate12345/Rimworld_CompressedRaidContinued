@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CompressedRaid.Global;
 using RimWorld;
+using RimWorld.Planet;
 using Verse;
 
 namespace CompressedRaid
@@ -20,6 +21,10 @@ namespace CompressedRaid
 
         public MapComponent_CompressedRaidBuffOnInit(Map map) : base(map)
         {
+            if(map.Parent is Settlement)
+            {
+                return;
+            }
             if (!_initialized)
             {
                 // record all maps that exist right now
@@ -31,6 +36,11 @@ namespace CompressedRaid
         public override void MapComponentTick()
         {
             if (_done) return;
+
+            if (map.Parent is Settlement)
+            {
+                return;
+            }
 
             // only buff maps that were NOT in the startup snapshot
             if (_loadedAtStartup.Contains(map.uniqueID))
@@ -64,10 +74,7 @@ namespace CompressedRaid
                          && !p.Dead && !p.Downed)
                 .ToList();
 
-            Map mainMap = Utils.GetPlayerMainColonyMap(false, false);
-            if (mainMap == null) return;
-
-            float threat = StorytellerUtility.DefaultThreatPointsNow(mainMap);
+            float threat = Utils.GetThreatPointsByPlayerMainColonyMapWealth(1.0f);
             if (threat <= settings.mapGeneratedEnemyMainColonyThreatMinimum)
                 return;
 

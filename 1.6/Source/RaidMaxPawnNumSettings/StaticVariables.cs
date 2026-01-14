@@ -195,5 +195,6 @@ namespace CompressedRaid
         public const bool MAP_GENERATED_ENEMY_ENHANCED = true;
         public const int MAP_GENERATED_ENEMY_MAINCOLONY_THREAT_PER_STAT_PERCENTAGE = 100;
         public const int MAP_GENERATED_ENEMY_MAINCOLONY_THREAT_MINIMUM = 1000;
+        public const bool MAP_GENERATED_ENEMY_MAINCOLONY_USE_ALL_MAPS = false;
     }
 }

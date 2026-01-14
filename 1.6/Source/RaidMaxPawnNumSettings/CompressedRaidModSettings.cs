@@ -96,6 +96,7 @@ namespace CompressedRaid
                 SetHugsLibValue<bool>("mapGeneratedEnemyEnhanced", bool.TryParse, ref this.mapGeneratedEnemyEnhanced);
                 SetHugsLibValue<int>("mapGeneratedEnemyMainColonyThreatMinimum", int.TryParse, ref this.mapGeneratedEnemyMainColonyThreatMinimum);
                 SetHugsLibValue<int>("mapGeneratedEnemyMainColonyThreatPerStatPercentage", int.TryParse, ref this.mapGeneratedEnemyMainColonyThreatPerStatPercentage);
+                SetHugsLibValue<bool>("mapGeneratedEnemyMainColonyUseAllMaps", bool.TryParse, ref this.mapGeneratedEnemyMainColonyUseAllMaps);
             }
             else
             {
@@ -178,6 +179,7 @@ namespace CompressedRaid
                 SetDefaultValueWithHugsLib<bool>("mapGeneratedEnemyEnhanced", bool.TryParse, ref this.mapGeneratedEnemyEnhanced);
                 SetDefaultValueWithHugsLib<int>("mapGeneratedEnemyMainColonyThreatMinimum", int.TryParse, ref this.mapGeneratedEnemyMainColonyThreatMinimum);
                 SetDefaultValueWithHugsLib<int>("mapGeneratedEnemyMainColonyThreatPerStatPercentage", int.TryParse, ref this.mapGeneratedEnemyMainColonyThreatPerStatPercentage);
+                SetDefaultValueWithHugsLib<bool>("mapGeneratedEnemyMainColonyUseAllMaps", bool.TryParse, ref this.mapGeneratedEnemyMainColonyUseAllMaps);
             }
             this.Write();
         }
@@ -581,5 +583,6 @@ namespace CompressedRaid
         public bool mapGeneratedEnemyEnhanced = StaticVariables.MAP_GENERATED_ENEMY_ENHANCED;
         public int mapGeneratedEnemyMainColonyThreatPerStatPercentage = StaticVariables.MAP_GENERATED_ENEMY_MAINCOLONY_THREAT_PER_STAT_PERCENTAGE;
         public int mapGeneratedEnemyMainColonyThreatMinimum = StaticVariables.MAP_GENERATED_ENEMY_MAINCOLONY_THREAT_MINIMUM;
+        public bool mapGeneratedEnemyMainColonyUseAllMaps = StaticVariables.MAP_GENERATED_ENEMY_MAINCOLONY_USE_ALL_MAPS;
     }
 }

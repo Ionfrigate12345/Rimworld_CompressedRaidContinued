@@ -194,4 +194,9 @@
 <CR_TechLevelLowerRangeLabel>Lower</CR_TechLevelLowerRangeLabel>
 <CR_TechLevelLowerRangeDesc>Extends coverage to drugs of a "TechLevel" lower than the raider faction's "TechLevel" by this number. (Default: 2)</CR_TechLevelLowerRangeDesc>
 
+<CR_EnableMapGeneratedEnemyEnhanced>Enhances exsiting enemies when the map is generated</CR_EnableMapGeneratedEnemyEnhanced>
+<CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>Triggers when the threat of the richest colony reaches this value</CR_MapGeneratedEnemyMainColonyThreatMinimum_Label>
+<CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>Compression stat percentage increased 1% for each X threat points</CR_MapGeneratedEnemyMainColonyThreatPerStatPercentage>
+<CR_mapGeneratedEnemyMainColonyUseAllMaps>Calculating by the sum of threat points of all current maps (Designed for nomad playstyle such as Odyssey gravship)</CR_mapGeneratedEnemyMainColonyUseAllMaps>
+
 </LanguageData>

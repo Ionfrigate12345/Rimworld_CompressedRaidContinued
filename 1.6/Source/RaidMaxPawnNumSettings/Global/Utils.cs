@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
@@ -10,17 +11,31 @@ namespace CompressedRaid.Global
 {
     internal class Utils
     {
-        public static int GetAmbushThreatPointsByPlayerMainColonyMapWealth(float factorPercentage)
+        public static int GetThreatPointsByPlayerMainColonyMapWealth(float factorPercentage)
         {
-            var playerHomeMap = GetPlayerMainColonyMap();
-            if (playerHomeMap == null)
+            var settings = LoadedModManager.GetMod<CompressedRaidMod>()?.CRModSettings;
+            if (settings.mapGeneratedEnemyMainColonyUseAllMaps)
             {
-                return 0;
+                var playerMaps = Find.Maps.ToList();
+                int threatSum = 0;
+                foreach (var map in playerMaps)
+                {
+                    threatSum += GetThreatPointsByPlayerWealth(map, factorPercentage);
+                }
+                return threatSum;
             }
-            return GetRandomThreatPointsByPlayerWealth(playerHomeMap, factorPercentage);
+            else
+            {
+                var playerHomeMap = GetPlayerMainColonyMap();
+                if (playerHomeMap == null)
+                {
+                    return 0;
+                }
+                return GetThreatPointsByPlayerWealth(playerHomeMap, factorPercentage);
+            }
         }
 
-        public static int GetRandomThreatPointsByPlayerWealth(
+        public static int GetThreatPointsByPlayerWealth(
             Map map,
             float factorPercentage //Percentage of threat from this player colony
             )

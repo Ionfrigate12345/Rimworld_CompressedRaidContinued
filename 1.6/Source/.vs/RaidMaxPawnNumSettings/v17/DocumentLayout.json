@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|d:\\onedrive\\games\\rimworldmodsources\\compressed-raid-continued\\1.6\\source\\raidmaxpawnnumsettings\\compressedraidmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\compressedraidmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\staticvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\staticvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|d:\\onedrive\\games\\rimworldmodsources\\compressed-raid-continued\\1.6\\source\\raidmaxpawnnumsettings\\compressedraidmodsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\compressedraidmodsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|d:\\onedrive\\games\\rimworldmodsources\\compressed-raid-continued\\1.6\\source\\raidmaxpawnnumsettings\\mapcomponent_compressedraidbuffoninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\mapcomponent_compressedraidbuffoninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\global\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\global\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\compressedraidmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\compressedraidmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\main\\poweruputility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\main\\poweruputility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|d:\\onedrive\\games\\rimworldmodsources\\compressed-raid-continued\\1.6\\source\\raidmaxpawnnumsettings\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\staticvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\staticvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\main\\cr_powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\main\\cr_powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\raidmaxpawnnumsettings\\global\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{831E221A-1F26-4784-887E-30EB4D498CED}|RaidMaxPawnNumSettings\\RaidMaxPawnNumSettings.csproj|solutionrelative:raidmaxpawnnumsettings\\global\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,34 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CompressedRaidMod.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
-              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
-              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
-              "RelativeToolTip": "RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T02:04:24.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "General.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\General.cs",
-              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\General.cs",
-              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\General.cs",
-              "RelativeToolTip": "RaidMaxPawnNumSettings\\General.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAswFsAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T01:50:31.575Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -81,14 +59,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PowerupUtility.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
-              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
-              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
-              "RelativeToolTip": "RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAIwNIAAAAfAAAA",
+              "Title": "Utils.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Global\\Utils.cs",
+              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\Global\\Utils.cs",
+              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Global\\Utils.cs",
+              "RelativeToolTip": "RaidMaxPawnNumSettings\\Global\\Utils.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwBYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T01:28:48.988Z",
+              "WhenOpened": "2025-04-21T21:33:34.925Z",
               "EditorCaption": ""
             },
             {
@@ -99,7 +77,7 @@
               "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\MapComponent_CompressedRaidBuffOnInit.cs",
               "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\MapComponent_CompressedRaidBuffOnInit.cs",
               "RelativeToolTip": "RaidMaxPawnNumSettings\\MapComponent_CompressedRaidBuffOnInit.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAUwCAAAAAeAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAqwEsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T14:35:07.805Z",
               "EditorCaption": ""
@@ -107,6 +85,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CompressedRaidModSettings.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\CompressedRaidModSettings.cs",
+              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\CompressedRaidModSettings.cs",
+              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\CompressedRaidModSettings.cs",
+              "RelativeToolTip": "RaidMaxPawnNumSettings\\CompressedRaidModSettings.cs",
+              "ViewState": "AQIAADoCAAAAAAAAAAAUwEkCAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T22:41:34.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CompressedRaidMod.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
+              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
+              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
+              "RelativeToolTip": "RaidMaxPawnNumSettings\\CompressedRaidMod.cs",
+              "ViewState": "AQIAAM0BAAAAAAAAAAAqwNwBAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T02:04:24.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "General.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\General.cs",
+              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\General.cs",
+              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\General.cs",
+              "RelativeToolTip": "RaidMaxPawnNumSettings\\General.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAswFsAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T01:50:31.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PowerupUtility.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
+              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
+              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
+              "RelativeToolTip": "RaidMaxPawnNumSettings\\Main\\PowerupUtility.cs",
+              "ViewState": "AQIAAL4AAAAAAAAAAAAIwNIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T01:28:48.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HarmonyPatches.cs",
               "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\HarmonyPatches.cs",
               "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\HarmonyPatches.cs",
@@ -114,36 +143,24 @@
               "RelativeToolTip": "RaidMaxPawnNumSettings\\HarmonyPatches.cs",
               "ViewState": "AQIAAH0AAAAAAAAAAAAswJYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:57:27.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T12:57:27.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "StaticVariables.cs",
               "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\StaticVariables.cs",
               "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\StaticVariables.cs",
               "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\StaticVariables.cs",
               "RelativeToolTip": "RaidMaxPawnNumSettings\\StaticVariables.cs",
-              "ViewState": "AQIAAKYAAAAAAAAAAAAIwL0AAAAAAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAUwMUAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:46:33.059Z"
+              "WhenOpened": "2025-04-21T21:46:33.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Utils.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Global\\Utils.cs",
-              "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\Global\\Utils.cs",
-              "ToolTip": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Global\\Utils.cs",
-              "RelativeToolTip": "RaidMaxPawnNumSettings\\Global\\Utils.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAawIIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:33:34.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CR_Powerup.cs",
               "DocumentMoniker": "D:\\OneDrive\\Games\\RimworldModSources\\Compressed-Raid-Continued\\1.6\\Source\\RaidMaxPawnNumSettings\\Main\\CR_Powerup.cs",
               "RelativeDocumentMoniker": "RaidMaxPawnNumSettings\\Main\\CR_Powerup.cs",
