@@ -21,7 +21,7 @@ namespace CompressedRaid
 
         public MapComponent_CompressedRaidBuffOnInit(Map map) : base(map)
         {
-            if(map.Parent is Settlement)
+            if(map.Parent is Settlement && map.ParentFaction == Faction.OfPlayer)
             {
                 return;
             }
@@ -37,7 +37,7 @@ namespace CompressedRaid
         {
             if (_done) return;
 
-            if (map.Parent is Settlement)
+            if (map.Parent is Settlement && map.ParentFaction == Faction.OfPlayer)
             {
                 return;
             }
@@ -74,7 +74,7 @@ namespace CompressedRaid
                          && !p.Dead && !p.Downed)
                 .ToList();
 
-            float threat = Utils.GetThreatPointsByPlayerMainColonyMapWealth(1.0f);
+            float threat = Utils.GetThreatPointsByWealth(1.0f);
             if (threat <= settings.mapGeneratedEnemyMainColonyThreatMinimum)
                 return;
 

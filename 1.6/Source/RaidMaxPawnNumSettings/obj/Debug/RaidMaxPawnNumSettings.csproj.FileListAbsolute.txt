@@ -12,3 +12,7 @@ C:\SteamLibrary\steamapps\common\RimWorld\Mods\CompressedRaidContinued\1.6\Assem
 D:\OneDrive\Games\RimworldModSources\Compressed-Raid-Continued\1.6\Source\RaidMaxPawnNumSettings\obj\Debug\RaidMaxPawnNumSettings.csproj.AssemblyReference.cache
 D:\OneDrive\Games\RimworldModSources\Compressed-Raid-Continued\1.6\Source\RaidMaxPawnNumSettings\obj\Debug\RaidMaxPawnNumSettings.csproj.CoreCompileInputs.cache
 D:\OneDrive\Games\RimworldModSources\Compressed-Raid-Continued\1.6\Source\RaidMaxPawnNumSettings\obj\Debug\CompressedRaid.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CompressedRaidContinued\1.6\Assemblies\CompressedRaid.dll
+C:\Users\xt_sh\OneDrive\Games\RimworldModSources\Compressed-Raid-Continued\1.6\Source\RaidMaxPawnNumSettings\obj\Debug\RaidMaxPawnNumSettings.csproj.AssemblyReference.cache
+C:\Users\xt_sh\OneDrive\Games\RimworldModSources\Compressed-Raid-Continued\1.6\Source\RaidMaxPawnNumSettings\obj\Debug\RaidMaxPawnNumSettings.csproj.CoreCompileInputs.cache
+C:\Users\xt_sh\OneDrive\Games\RimworldModSources\Compressed-Raid-Continued\1.6\Source\RaidMaxPawnNumSettings\obj\Debug\CompressedRaid.dll

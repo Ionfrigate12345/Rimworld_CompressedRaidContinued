@@ -11,7 +11,7 @@ namespace CompressedRaid.Global
 {
     internal class Utils
     {
-        public static int GetThreatPointsByPlayerMainColonyMapWealth(float factorPercentage)
+        public static int GetThreatPointsByWealth(float factorPercentage)
         {
             var settings = LoadedModManager.GetMod<CompressedRaidMod>()?.CRModSettings;
             if (settings.mapGeneratedEnemyMainColonyUseAllMaps)
