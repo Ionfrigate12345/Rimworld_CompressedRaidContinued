@@ -1,11 +1,13 @@
-﻿using System;
+﻿using RimWorld;
+using RimWorld.Planet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
-using RimWorld;
 using Verse;
+using static UnityEngine.GraphicsBuffer;
 
 namespace CompressedRaid.Global
 {
@@ -17,12 +19,17 @@ namespace CompressedRaid.Global
             if (settings.mapGeneratedEnemyMainColonyUseAllMaps)
             {
                 var playerMaps = Find.Maps.ToList();
-                int threatSum = 0;
+                float threatSum = 0;
                 foreach (var map in playerMaps)
                 {
                     threatSum += GetThreatPointsByPlayerWealth(map, factorPercentage);
                 }
-                return threatSum;
+                //Other player world objects that have no map (Caravans)
+                foreach (var wo in Find.WorldObjects.Caravans.Where(wo => wo.Faction == Faction.OfPlayer))
+                {
+                    threatSum += StorytellerUtility.DefaultThreatPointsNow(wo);
+                }
+                return (int)threatSum;
             }
             else
             {

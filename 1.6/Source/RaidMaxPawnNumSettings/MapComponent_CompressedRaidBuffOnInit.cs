@@ -13,7 +13,7 @@ namespace CompressedRaid
     public class MapComponent_CompressedRaidBuffOnInit : MapComponent
     {
         private bool _done;
-        private int _delayTicks = 30;    
+        private int _delayTicks = 60;    
         private const int TicksBetweenChecks = 15;
 
         private static HashSet<int> _loadedAtStartup;
